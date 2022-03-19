@@ -2,14 +2,14 @@
 Welcome to DEFL's GitHub page!
 This is the repository of the source code.
 
-# To Do
+# To do
 - [x] Put on GitHub
-- [ ] Finish frontend
+- [x] Finish frontend
     - [x] Show info while hovering on the (i) icon
     - [x] Add a row for the icons at the bottom
-    - [ ] Disclaimers and Details
+    - [x] Disclaimers and Details
+    - [x] Fix the region input box
+    - [ ] Output UI part
 
 - [ ] Finish the logic behind
-    - [ ] Figure out how to use United Nation's population API
-    - [ ] Fix the region input box
     - [ ] The Math™️ part
