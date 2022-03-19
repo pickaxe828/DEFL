@@ -11,12 +11,11 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="index.css" />
-        <script src="index.js"></script>
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <div class="container mt3" style="width: 40%; margin-top: 5%">
+        <div class="container mt3 overflow-hidden" style="width: 40%; margin-top: 5%" id="container">
             <h1>Welcome to DEFL❤️</h1>
             <h6 style="color: grey">
                 Stands for Drake's Equation Calculator for Love
@@ -34,8 +33,7 @@
                         placeholder="Region"
                     />
                     <!-- Region: Options -->
-                    <datalist id="datalistOptions">
-                        <option value="test"></option>
+                    <datalist class="regionOptionsList" id="datalistOptions">
                         <!-- JS append elements here-->
                     </datalist>
                 </div>
@@ -52,7 +50,7 @@
                         class="input-group-text"
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
-                        title="Apologies for not providing non-bin options here as the UN's API only provide the population of Male and Female 😢❤️"
+                        title="Apologies for not providing non-binary options here as the UN's API only provide the population of Male and Female 😢❤️"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +119,7 @@
 
                 <!-- Calculate -->
                 <div class="p-2 mb-3">
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-primary" id="submitBtn">
                         Calculate
                     </button>
                 </div>
@@ -129,7 +127,7 @@
             
             <!-- Ending -->
             <div class="container" id="ending">
-                <a href="disclaimer.html">Details, disclaimer and Terms of Service</a
+                <a href="pages/disclaimer.html">Details, disclaimer and Terms of Service</a
                 ><br />
                 <span height="24px">
                     This website is made by
@@ -157,12 +155,14 @@
                 </a>
             </div>
         </div>
-
+        
+        <!-- Scripts -->
+        <script src="index.js" type="module" ></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"
         ></script>
-        <script src="tooltip.js"></script>
+        <script src="utils/tooltip.js"></script>
     </body>
 </html>
