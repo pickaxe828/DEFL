@@ -1,1 +1,10 @@
+# JSON Data cached locally just to make my life easier
 __useless_data__/
+
+# NPM
+node_modules/
+
+# Parcel generated directories
+dist/
+.cache/
+.parcel-cache/
