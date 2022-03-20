@@ -13,7 +13,7 @@ const onload = async function() {
         for (let i of regions) {
             let element = document.createElement('option')
             element.setAttribute("value", i)
-            document.getElementsByClassName("regionOptionsList")[0].appendChild(element)
+            document.getElementsByClassName("regionSearchDropdownOptions")[0].appendChild(element)
         }
 
         document.getElementById("submitBtn").onclick = async function () {
@@ -22,11 +22,11 @@ const onload = async function() {
             body.classList.add("overflow-auto")
         }
 
-        document.getElementById("regionInputField").onchange = async function (element) { 
+        document.getElementById("regionSearchDropdown").onchange = async function (element) { 
             console.log(element.target.value)
         }
 
-        document.getElementById("regionInputField").onchange = async function (element) { 
+        document.getElementById("sexDropdown").onchange = async function (element) { 
             console.log(element.target.value)
         }
 
