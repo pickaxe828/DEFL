@@ -3,8 +3,11 @@
     "parcel": "^2.3.2"
   },
   "scripts": {
-  "dev": "parcel ./src/index.html",
-  "prebuild": "npx rimraf build",
-  "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build"
+    "dev": "parcel ./src/index.html",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build"
+  },
+  "dependencies": {
+    "twemoji": "^14.0.2"
   }
 }
